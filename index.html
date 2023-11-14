@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kert Rendbetétele</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src ="images/logo.png" class="logo">
+            <ul id="menu">
+                <li><a href="#kert rendbetétele">KERT RENDBETÉTELE</a></li>
+                <li><a href="#rólunk">RÓLUNK</a></li>
+                <li><a href="#szolgáltatásaink">SZOLGÁLTATÁSAINK</a></li>
+                <li><a href="#referencia">REFERENCIA</a></li>
+                <li><a href="#kapcsolat">KAPCSOLAT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="kert rendbetétele">
+            <h2>KERT RENDBETÉTELE</h2>
+            <p class="text"> Tisztelettel várjuk minden nap a megkeresésüket!</p>
+        </section>
+
+        <section id="rólunk">
+            <h2>RÓLUNK</h2>
+            <p class="text">Munkánkra kifejezetten igényesek vagyunk!</p>
+        </section>
+
+        <section id="szolgáltatásaink">
+            <h2>SZOLGÁLTATÁSAINK</h2>
+            <p class="text">Fűnyírás, fák metszése, tűzifa vágás, fa kiásása, zöld hulladék kezelése.
+                Jószágól építése, bontása.</p>
+        </section>
+
+        <section id="referencia">
+            <h2>REFERENCIA</h2>
+            <img src="images/kép.png">
+            <img src="images/imaage1.png">
+            <img src="images/image2.png">
+            <img src="images/image3.png">
+        </section>
+
+        <section id="kapcsolat">
+            <h2>KAPCSOLAT</h2>
+            <p class="text">+36 20 503 4934</p>
+            <p class="text">A hét bármelyik napján!</p>
+        </section>
+    </main>
+
+
+
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+
+        }
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>
